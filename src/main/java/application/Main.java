@@ -1,6 +1,7 @@
 package application;
 
 import application.lista.ListaSimples;
+import application.pilha.PilhaSimples;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,6 +19,19 @@ public class Main {
         lista.remover(0);
 
         System.out.println(lista);
+        
+        PilhaSimples pilha = new PilhaSimples (3);      
+        pilha.empilhar("Primeiro Elemento"); 
+        pilha.empilhar("Segundo Elemento");
+
+        System.out.println(pilha.desempilhar());
+        pilha.empilhar("Terceiro Elemento");
+         System.out.println(pilha.desempilhar());
+         System.out.println(pilha.desempilhar());
+         System.out.println(pilha.desempilhar());
+        
+        System.out.println(pilha);
+        
     }
 }
 
